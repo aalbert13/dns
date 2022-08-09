@@ -1,6 +1,6 @@
 import socket
 
-file = open('/Users/aalbert/Desktop/python/ips.txt', 'r').readlines()
+file = open('ips.txt', 'r').readlines()
 file_set = set(file)
 
 
@@ -10,7 +10,7 @@ for i in file_set:
     file_no_duplicate.write(i)
 file_no_duplicate.close()    
 
-ips = open('/Users/aalbert/Desktop/python/noduplicateips.txt', 'r')
+ips = open('noduplicateips.txt', 'r')
 
 ip_list = []
 
