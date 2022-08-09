@@ -40,7 +40,7 @@ for y in ip_list:
          if reversed_dns == temp_ip: 
            print(y , '-->',  socket.gethostbyaddr(y), '\n')
            file3.write(y+ '-->' + str(socket.gethostbyaddr(y)) + '\n')    
-    except socket.herror:
+    except:
         pass     
 file.close()    
 file2.close()
